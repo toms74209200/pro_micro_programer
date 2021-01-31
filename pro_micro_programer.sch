@@ -1,0 +1,243 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Pro micro programer"
+Date "2021-01-17"
+Rev "v1.0"
+Comp "Toms"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x12_Male J1
+U 1 1 6003EAFC
+P 4700 2900
+F 0 "J1" H 4800 3600 50  0000 R CNN
+F 1 "Conn_01x12" H 4950 3500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 4700 2900 50  0001 C CNN
+F 3 "~" H 4700 2900 50  0001 C CNN
+	1    4700 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x12_Male J2
+U 1 1 60040204
+P 5650 2900
+F 0 "J2" H 5758 3581 50  0000 C CNN
+F 1 "Conn_01x12" H 5600 3500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 5650 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 60042931
+P 5200 4150
+F 0 "J3" V 5300 3900 50  0000 C CNN
+F 1 "Conn_02x03" V 5200 3700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 5200 4150 50  0001 C CNN
+F 3 "~" H 5200 4150 50  0001 C CNN
+	1    5200 4150
+	0    -1   -1   0   
+$EndComp
+Text Notes 4750 3500 0    60   ~ 0
+TX0\nRX1\nGND\nGND\n2\n3\n4\n5\n6\n7\n8\n9
+Text Notes 5400 3500 0    60   ~ 0
+RAW\nGND\nRST\nVCC\nA3\nA2\nA1\nA0\n15\n14\n16\n10
+$Comp
+L power:VCC #PWR0101
+U 1 1 6004B3BB
+P 6400 2600
+F 0 "#PWR0101" H 6400 2450 50  0001 C CNN
+F 1 "VCC" H 6415 2773 50  0000 C CNN
+F 2 "" H 6400 2600 50  0001 C CNN
+F 3 "" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6004C0CC
+P 4150 2750
+F 0 "#PWR0102" H 4150 2500 50  0001 C CNN
+F 1 "GND" H 4155 2577 50  0001 C CNN
+F 2 "" H 4150 2750 50  0001 C CNN
+F 3 "" H 4150 2750 50  0001 C CNN
+	1    4150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6004C782
+P 5450 3900
+F 0 "#PWR0103" H 5450 3650 50  0001 C CNN
+F 1 "GND" H 5600 3850 50  0001 C CNN
+F 2 "" H 5450 3900 50  0001 C CNN
+F 3 "" H 5450 3900 50  0001 C CNN
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6004D042
+P 6200 2350
+F 0 "#PWR0104" H 6200 2100 50  0001 C CNN
+F 1 "GND" H 6205 2177 50  0001 C CNN
+F 2 "" H 6200 2350 50  0001 C CNN
+F 3 "" H 6200 2350 50  0001 C CNN
+	1    6200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 6004DB2C
+P 6750 4250
+F 0 "#PWR0105" H 6750 4000 50  0001 C CNN
+F 1 "GND" H 6755 4077 50  0001 C CNN
+F 2 "" H 6750 4250 50  0001 C CNN
+F 3 "" H 6750 4250 50  0001 C CNN
+	1    6750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2700 4150 2700
+Wire Wire Line
+	4150 2700 4150 2750
+Wire Wire Line
+	4500 2600 4150 2600
+Wire Wire Line
+	4150 2600 4150 2700
+Connection ~ 4150 2700
+Wire Wire Line
+	5850 2500 6050 2500
+Wire Wire Line
+	6050 2500 6050 2300
+Wire Wire Line
+	6050 2300 6200 2300
+Wire Wire Line
+	6200 2300 6200 2350
+Wire Wire Line
+	6400 2600 6400 2700
+Wire Wire Line
+	6400 2700 5850 2700
+Wire Wire Line
+	5850 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 4450
+Wire Wire Line
+	6000 4450 5300 4450
+Wire Wire Line
+	5300 4450 5300 4350
+Wire Wire Line
+	5850 3400 6050 3400
+Wire Wire Line
+	6050 3750 5200 3750
+Wire Wire Line
+	5200 3750 5200 3850
+Wire Wire Line
+	6050 3400 6050 3750
+Wire Wire Line
+	5850 3300 6100 3300
+Wire Wire Line
+	6100 4650 5100 4650
+Wire Wire Line
+	5300 3850 5300 3800
+Wire Wire Line
+	5300 3800 5450 3800
+Wire Wire Line
+	5450 3900 5450 3800
+$Comp
+L Device:R_US R1
+U 1 1 60054EDE
+P 6500 3750
+F 0 "R1" V 6600 3850 50  0000 L CNN
+F 1 "10k" V 6600 3450 50  0000 L CNN
+F 2 "OPL_Resistor:R0603" V 6540 3740 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6050 3750
+Wire Wire Line
+	6650 3750 6750 3750
+Wire Wire Line
+	6750 3750 6750 3850
+$Comp
+L Device:LED D1
+U 1 1 60054575
+P 6750 4000
+F 0 "D1" V 6800 3800 50  0000 C CNN
+F 1 "Rohm SML-E1 LED" V 6700 3500 50  0000 C CNN
+F 2 "OPL_Discrete_Semiconductor:LED-1206" H 6750 4000 50  0001 C CNN
+F 3 "~" H 6750 4000 50  0001 C CNN
+	1    6750 4000
+	0    -1   -1   0   
+$EndComp
+Text Label 5350 4650 0    50   ~ 0
+MISO
+Wire Wire Line
+	6100 3300 6100 4650
+Wire Wire Line
+	5100 4350 5100 4650
+Wire Wire Line
+	5200 4350 5200 4550
+Wire Wire Line
+	6200 3200 6200 4550
+Text Label 5350 4550 0    50   ~ 0
+SCLK
+Text Label 5350 4450 0    50   ~ 0
+RESET
+Text Label 5350 3750 0    50   ~ 0
+MOSI
+Wire Wire Line
+	6750 4150 6750 4250
+Wire Wire Line
+	5200 4550 6200 4550
+Wire Wire Line
+	5850 3200 6200 3200
+Wire Wire Line
+	6050 3750 6350 3750
+Text Notes 4300 4200 0    50   ~ 0
+VCC  MOSI GND\nMISO SCLK RESET
+Wire Notes Line style solid
+	4450 2150 4450 3550
+Wire Notes Line style solid
+	4450 3550 5900 3550
+Wire Notes Line style solid
+	5900 3550 5900 2150
+Wire Notes Line style solid
+	5900 2150 4450 2150
+$Comp
+L power:VCC #PWR0106
+U 1 1 6004A5B0
+P 5100 3800
+F 0 "#PWR0106" H 5100 3650 50  0001 C CNN
+F 1 "VCC" H 5115 3973 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3800 5100 3850
+Text Notes 4450 2150 0    50   ~ 0
+Pro micro
+Text Notes 7200 6900 0    100  ~ 0
+PMP-21
+Text Notes 6900 3850 0    50   ~ 0
+MOSI
+Wire Notes Line style solid
+	6900 3750 6900 3850
+Wire Notes Line style solid
+	6900 3850 7100 3850
+Wire Notes Line style solid
+	7100 3850 7100 3750
+Wire Notes Line style solid
+	7100 3750 6900 3750
+$EndSCHEMATC
